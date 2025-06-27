@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>5-Day Weather Forecast</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="w.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+    <input type="text" id="cityInput" placeholder="Enter city name">
+    <div class="button-group">
+      <button onclick="getWeather()"><i class="fas fa-search"></i> Search</button>
+      <button onclick="useMyLocation()"><i class="fas fa-map-marker-alt"></i> Use My Location</button>
+      <button onclick="toggleDarkMode()"><i class="fas fa-adjust"></i> Toggle Dark Mode</button>
+    </div>
+
+    <div id="weather"></div>
+    <div id="forecast" class="forecast-grid"></div>
+    <canvas id="tempChart" width="400" height="200"></canvas>
+  </div>
+  <script src="w.js"></script>
+</body>
+</html>
